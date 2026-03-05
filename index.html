@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>FRICOM | Refrigeración y Climatización</title>
-  <style>
+
+<!-- ICONOS REDES -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
 
 body{
 font-family:Arial;
@@ -98,6 +102,10 @@ box-shadow:0 5px 15px rgba(0,0,0,0.4);
 transition:0.3s;
 }
 
+.service:hover{
+transform:translateY(-8px);
+}
+
 /* GALERIA */
 
 .galeria{
@@ -127,7 +135,7 @@ padding:20px;
 margin-top:40px;
 }
 
-/* WHATSAPP */
+/* BOTON WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -135,11 +143,53 @@ bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-font-size:28px;
+font-size:26px;
 padding:15px 18px;
 border-radius:50%;
 text-decoration:none;
 box-shadow:0 4px 10px rgba(0,0,0,0.4);
+transition:0.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+/* REDES SOCIALES */
+
+.redes{
+position:fixed;
+right:20px;
+bottom:90px;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.redes a{
+width:50px;
+height:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+color:white;
+font-size:22px;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.4);
+transition:0.3s;
+}
+
+.redes a:hover{
+transform:scale(1.15);
+}
+
+.instagram{
+background:#E1306C;
+}
+
+.facebook{
+background:#1877F2;
 }
 
 /* NIEVE ANIMADA */
@@ -271,7 +321,23 @@ Refrigeración y Climatización
 
 </div>
 
-<a href="https://wa.me/56981952517" class="whatsapp">💬</a>
+<!-- BOTONES REDES -->
+
+<div class="redes">
+
+<a href="https://instagram.com" class="instagram" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://facebook.com" class="facebook" target="_blank">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+</div>
+
+<a href="https://wa.me/56981952517" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
 
 <!-- NIEVE -->
 
