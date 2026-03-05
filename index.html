@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FRICOM | Refrigeración y Climatización</title>
 
 <style>
@@ -10,84 +9,63 @@
 body{
 font-family:Arial;
 margin:0;
+background-image:url("NIEVE FONDO.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
 color:white;
 text-align:center;
-background:#0d47a1;
+}
+
+/* CAPA OSCURA PARA LEER TEXTO */
+
+.overlay{
+background:rgba(0,0,0,0.55);
+min-height:100vh;
 }
 
 /* HEADER */
 
 header{
-background:#08306b;
-padding:20px;
+padding:30px;
 }
+
+/* LOGO */
 
 .logo img{
 width:220px;
-}
-
-/* HERO */
-
-.hero{
-background-image:url("FONDO.jpg");
-background-size:cover;
-background-position:center;
-height:450px;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-text-shadow:2px 2px 10px black;
-position:relative;
-}
-
-/* CAPA OSCURA PARA QUE EL TEXTO SE VEA MEJOR */
-
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.45);
-}
-
-.hero *{
-position:relative;
-}
-
-.hero h1{
-font-size:52px;
-margin:0;
-}
-
-.hero p{
-font-size:22px;
-margin-bottom:20px;
-}
-
-/* BOTON */
-
-.btn{
-background:#00c853;
-padding:15px 30px;
-font-size:18px;
-border-radius:8px;
-color:white;
-cursor:pointer;
-text-decoration:none;
-transition:0.3s;
-}
-
-.btn:hover{
-background:#00a844;
+display:block;
+margin:auto;
 }
 
 /* SECCIONES */
 
 .section{
-padding:60px 20px;
+padding:40px;
+}
+
+/* TARJETA PROMO */
+
+.card{
+background:white;
+color:black;
+padding:30px;
+border-radius:10px;
+max-width:500px;
+margin:auto;
+}
+
+/* BOTON */
+
+button{
+background:#00c853;
+border:none;
+padding:15px 30px;
+font-size:18px;
+border-radius:8px;
+color:white;
+cursor:pointer;
 }
 
 /* SERVICIOS */
@@ -95,47 +73,16 @@ padding:60px 20px;
 .services{
 display:flex;
 justify-content:center;
-gap:25px;
+gap:20px;
 flex-wrap:wrap;
 }
 
 .service{
 background:white;
 color:black;
-padding:25px;
-border-radius:12px;
-width:220px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-transition:0.3s;
-}
-
-.service:hover{
-transform:translateY(-8px);
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
-}
-
-/* PROMO */
-
-.card{
-background:white;
-color:black;
-padding:35px;
-border-radius:12px;
-max-width:450px;
-margin:auto;
-box-shadow:0 5px 20px rgba(0,0,0,0.3);
-}
-
-.price{
-font-size:40px;
-color:#0d47a1;
-font-weight:bold;
-}
-
-/* CONTACTO */
-
-.section p{
-font-size:18px;
+padding:20px;
+border-radius:10px;
+width:200px;
 }
 
 /* FOOTER */
@@ -146,54 +93,25 @@ padding:20px;
 margin-top:40px;
 }
 
-/* WHATSAPP */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-font-size:28px;
-padding:16px 18px;
-border-radius:50%;
-text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-transition:0.3s;
-}
-
-.whatsapp:hover{
-transform:scale(1.1);
-}
-
 </style>
+
 </head>
 
 <body>
 
+<div class="overlay">
+
 <header>
 
 <div class="logo">
-<img src="logo-fricom.jpg">
+<img src="ChatGPT Image 5 mar 2026, 04_01_25 p.m..png">
 </div>
 
 <p>Refrigeración y Climatización</p>
 
 </header>
 
-<div class="hero">
-
-<h1>PROMOCIÓN INVIERNO</h1>
-
-<p>Aire acondicionado Inverter</p>
-
-<a class="btn" href="https://wa.me/56981952517">
-Cotiza por WhatsApp
-</a>
-
-</div>
-
-<div class="section" id="servicios">
+<div class="section">
 
 <h2>Servicios</h2>
 
@@ -225,14 +143,16 @@ Cotiza por WhatsApp
 
 <p>9000 BTU</p>
 
-<div class="price">$399.900</div>
+<h2>$399.900</h2>
 
 <p>Instalación incluida</p>
 
 <br>
 
-<a class="btn" href="https://wa.me/56981952517">
-Consultar ahora
+<a href="https://wa.me/56981952517">
+
+<button>Consultar por WhatsApp</button>
+
 </a>
 
 </div>
@@ -246,8 +166,6 @@ Consultar ahora
 <p>📞 +56 9 8195 2517</p>
 <p>📞 +56 9 4213 8052</p>
 
-<p>📍 Puerto Montt</p>
-
 </div>
 
 <footer>
@@ -257,9 +175,7 @@ Refrigeración y Climatización
 
 </footer>
 
-<a href="https://wa.me/56981952517" class="whatsapp">
-💬
-</a>
+</div>
 
 </body>
 </html>
