@@ -3,231 +3,161 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>FRICOM | Refrigeración y Climatización</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif}
-body{background:#f4f6f9;color:#333}
 
-/* NAVBAR */
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 40px;
-background:white;
-box-shadow:0 2px 8px rgba(0,0,0,.1)
+body{
+margin:0;
+font-family:Arial;
+background:#e6f2ff;
 }
 
-.logo{
-font-size:24px;
-font-weight:bold;
-color:#0d47a1
-}
-
-.menu a{
-margin:0 15px;
-text-decoration:none;
-color:#333;
-font-weight:500
-}
-
-.btn{
-background:#ff5722;
-color:white;
-padding:10px 20px;
-border-radius:6px;
-text-decoration:none
-}
-
-/* HERO */
+/* FONDO AFICHE */
 
 .hero{
-background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
-url('https://images.unsplash.com/photo-1608889175119-0f7a1f1aa1a1');
+
+background:url("fondo-invierno.jpg");
 background-size:cover;
 background-position:center;
-height:500px;
+min-height:100vh;
+
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
+
 text-align:center;
 color:white;
-padding:40px
+padding:20px;
+
 }
 
-.hero h1{
-font-size:48px;
-margin-bottom:15px
+.contenido{
+
+background:rgba(0,0,0,0.35);
+padding:40px;
+border-radius:15px;
+max-width:500px;
+
 }
 
-.hero p{
-font-size:20px;
-margin-bottom:25px
-}
+/* TITULO */
 
-.cta{
-background:#ffc107;
-color:#000;
-padding:15px 30px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold
-}
+h1{
 
-/* SERVICIOS */
+font-size:40px;
+margin-bottom:20px;
 
-.services{
-padding:60px 40px;
-text-align:center
-}
-
-.services h2{
-margin-bottom:40px;
-font-size:32px
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,.1)
-}
-
-.card h3{
-margin-bottom:10px
 }
 
 /* PROMO */
 
-.promo{
-background:#0d47a1;
-color:white;
-padding:60px 40px;
-text-align:center
-}
+.precio{
 
-.price{
-font-size:40px;
+background:gold;
+color:black;
+padding:15px;
+border-radius:10px;
+font-size:28px;
+font-weight:bold;
 margin:20px 0;
-color:#ffc107
+
 }
 
-/* CONTACTO */
+/* LISTA SERVICIOS */
 
-.contact{
-padding:50px;
-text-align:center
+.servicios{
+
+text-align:left;
+margin:20px 0;
+font-size:18px;
+
 }
 
-.whatsapp{
-background:#25D366;
+/* BOTON */
+
+.boton{
+
+background:#1fbf5b;
+padding:18px 30px;
+border-radius:40px;
 color:white;
-padding:15px 30px;
-border-radius:8px;
+font-size:20px;
 text-decoration:none;
-font-size:18px
+display:inline-block;
+margin-top:20px;
+
 }
 
-footer{
-background:#0d47a1;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px
+/* TELEFONOS */
+
+.telefonos{
+
+margin-top:25px;
+font-size:18px;
+
+}
+
+.logo{
+
+width:180px;
+margin-bottom:20px;
+
 }
 
 </style>
+
 </head>
 
 <body>
 
-<nav>
-<div class="logo">
-<img src="logo-fricom.jpg" height="70">
-</div>
-
-<div class="menu">
-<a href="#">Inicio</a>
-<a href="#servicios">Servicios</a>
-<a href="#promo">Promoción</a>
-<a href="#contacto">Contacto</a>
-<a class="btn" href="#contacto">Cotiza Ahora</a>
-</div>
-</nav>
-
 <section class="hero">
-<div>
-<h1>Especialistas en Aire Acondicionado</h1>
-<p>Instalación · Mantención · Reparación</p>
-<a class="cta" href="https://wa.me/56981952517">Cotiza Ahora</a>
-</div>
-</section>
 
-<section id="servicios" class="services">
+<div class="contenido">
 
-<h2>Nuestros Servicios</h2>
+<img src="logo-fricom.jpg" class="logo">
 
-<div class="grid">
+<h1>PROMOCIÓN INVIERNO</h1>
 
-<div class="card">
-<h3>Instalación</h3>
-<p>Instalación profesional de equipos de aire acondicionado inverter.</p>
-</div>
+<p>Tecnología Inverter</p>
 
-<div class="card">
-<h3>Mantención</h3>
-<p>Mantenimiento preventivo para mejorar rendimiento y duración.</p>
-</div>
+<div class="precio">
 
-<div class="card">
-<h3>Reparaciones</h3>
-<p>Diagnóstico y reparación de sistemas de climatización.</p>
-</div>
+Desde $399.900  
+9000 BTU
 
 </div>
 
-</section>
+<div class="servicios">
 
-<section id="promo" class="promo">
-
-<h2>Promoción Invierno</h2>
-
-<p>Aire acondicionado Inverter</p>
-
-<div class="price">$399.900</div>
-
-<p>Equipo 9000 BTU + instalación</p>
-
-</section>
-
-<section id="contacto" class="contact">
-
-<h2>Contacto</h2>
-
-<p>📞 +56 9 8195 2517</p>
-<p>📞 +56 9 4213 8052</p>
-
+✔ Instalación  
 <br>
 
-<a class="whatsapp" href="https://wa.me/56981952517">
-Contactar por WhatsApp
+✔ Mantención  
+<br>
+
+✔ Reparación de aire acondicionado
+
+</div>
+
+<a class="boton" href="https://wa.me/56981952517">
+
+CONSULTA YA POR NUESTROS SERVICIOS
+
 </a>
 
+<div class="telefonos">
+
+📞 +56 9 8195 2517  
+<br>
+📞 +56 9 4213 8052
+
+</div>
+
+</div>
+
 </section>
-
-<footer>
-
-FRICOM © 2026  
-Refrigeración y Climatización
-
-</footer>
 
 </body>
 </html>
