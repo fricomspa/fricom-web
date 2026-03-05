@@ -29,6 +29,7 @@ min-height:100vh;
 
 header{
 padding:30px;
+background:rgba(0,0,0,0.4);
 }
 
 /* LOGO */
@@ -42,7 +43,7 @@ margin:auto;
 /* SECCIONES */
 
 .section{
-padding:40px;
+padding:50px 20px;
 }
 
 /* TARJETA PROMO */
@@ -50,10 +51,11 @@ padding:40px;
 .card{
 background:white;
 color:black;
-padding:30px;
-border-radius:10px;
-max-width:500px;
+padding:35px;
+border-radius:12px;
+max-width:450px;
 margin:auto;
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
 }
 
 /* BOTON */
@@ -66,6 +68,11 @@ font-size:18px;
 border-radius:8px;
 color:white;
 cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#00a844;
 }
 
 /* SERVICIOS */
@@ -73,16 +80,22 @@ cursor:pointer;
 .services{
 display:flex;
 justify-content:center;
-gap:20px;
+gap:25px;
 flex-wrap:wrap;
 }
 
 .service{
 background:white;
 color:black;
-padding:20px;
-border-radius:10px;
-width:200px;
+padding:25px;
+border-radius:12px;
+width:220px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.service:hover{
+transform:translateY(-8px);
 }
 
 /* FOOTER */
@@ -91,6 +104,21 @@ footer{
 background:#082567;
 padding:20px;
 margin-top:40px;
+}
+
+/* BOTON WHATSAPP FLOTANTE */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:28px;
+padding:15px 18px;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.4);
 }
 
 </style>
@@ -150,9 +178,7 @@ margin-top:40px;
 <br>
 
 <a href="https://wa.me/56981952517">
-
 <button>Consultar por WhatsApp</button>
-
 </a>
 
 </div>
@@ -176,6 +202,8 @@ Refrigeración y Climatización
 </footer>
 
 </div>
+
+<a href="https://wa.me/56981952517" class="whatsapp">💬</a>
 
 </body>
 </html>
