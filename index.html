@@ -32,16 +32,56 @@ min-height:100vh;
 /* HEADER */
 
 header{
-padding:30px;
-background:rgba(0,0,0,0.4);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(0,0,0,0.6);
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 /* LOGO */
 
 .logo img{
-width:220px;
-display:block;
-margin:auto;
+width:200px;
+}
+
+/* MENU */
+
+.menu{
+display:flex;
+gap:25px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-size:16px;
+transition:0.3s;
+}
+
+.menu a:hover{
+color:#00c853;
+}
+
+/* REDES ARRIBA */
+
+.redes-top{
+display:flex;
+gap:15px;
+}
+
+.redes-top a{
+color:white;
+font-size:20px;
+transition:0.3s;
+}
+
+.redes-top a:hover{
+color:#00c853;
+transform:scale(1.2);
 }
 
 /* SECCIONES */
@@ -155,43 +195,6 @@ transition:0.3s;
 transform:scale(1.1);
 }
 
-/* REDES SOCIALES */
-
-.redes{
-position:fixed;
-right:20px;
-bottom:90px;
-display:flex;
-flex-direction:column;
-gap:12px;
-}
-
-.redes a{
-width:50px;
-height:50px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-color:white;
-font-size:22px;
-text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.4);
-transition:0.3s;
-}
-
-.redes a:hover{
-transform:scale(1.15);
-}
-
-.instagram{
-background:#E1306C;
-}
-
-.facebook{
-background:#1877F2;
-}
-
 /* NIEVE ANIMADA */
 
 .snowflake{
@@ -222,11 +225,35 @@ transform:translateY(110vh);
 <img src="ChatGPT Image 5 mar 2026, 04_01_25 p.m..png">
 </div>
 
-<p>Refrigeración y Climatización</p>
+<nav class="menu">
+
+<a href="#servicios">Servicios</a>
+<a href="#promo">Promoción</a>
+<a href="#trabajos">Trabajos</a>
+<a href="#ubicacion">Ubicación</a>
+<a href="#contacto">Contacto</a>
+
+</nav>
+
+<div class="redes-top">
+
+<a href="https://www.instagram.com/fricom_spa/" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://www.facebook.com/p/Fricom-100063662135570/?locale=es_LA" target="_blank">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://wa.me/56981952517" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</div>
 
 </header>
 
-<div class="section">
+<div class="section" id="servicios">
 
 <h2>Servicios</h2>
 
@@ -240,7 +267,7 @@ transform:translateY(110vh);
 
 </div>
 
-<div class="section">
+<div class="section" id="promo">
 
 <h2>Promoción Invierno</h2>
 
@@ -266,7 +293,7 @@ transform:translateY(110vh);
 
 </div>
 
-<div class="section">
+<div class="section" id="trabajos">
 
 <h2>Trabajos Realizados</h2>
 
@@ -280,7 +307,7 @@ transform:translateY(110vh);
 
 </div>
 
-<div class="section">
+<div class="section" id="ubicacion">
 
 <h2>Ubicación</h2>
 
@@ -299,7 +326,7 @@ loading="lazy">
 
 </div>
 
-<div class="section">
+<div class="section" id="contacto">
 
 <h2>Contacto</h2>
 
@@ -321,25 +348,9 @@ Refrigeración y Climatización
 
 </div>
 
-<!-- BOTONES REDES -->
-
-<div class="redes">
-
-<a href="https://www.instagram.com/fricom_spa/" class="instagram" target="_blank">
-<i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://www.facebook.com/p/Fricom-100063662135570/?locale=es_LA" class="facebook" target="_blank">
-<i class="fab fa-facebook-f"></i>
-</a>
-
-</div>
-
 <a href="https://wa.me/56981952517" class="whatsapp">
 <i class="fab fa-whatsapp"></i>
 </a>
-
-<!-- NIEVE -->
 
 <script>
 
