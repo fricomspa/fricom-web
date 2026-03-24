@@ -7,16 +7,11 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-.quienes-box{
-max-width:800px;
-margin:auto;
-background:rgba(0,0,0,0.6);
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.4);
-line-height:1.6;
-font-size:17px;
+
+html{
+scroll-behavior:smooth;
 }
+
 body{
 font-family:Arial;
 margin:0;
@@ -50,7 +45,6 @@ z-index:1000;
 
 .logo img{
 width:320px;
-height:auto;
 filter:drop-shadow(0 0 12px #00cfff);
 }
 
@@ -64,8 +58,6 @@ gap:25px;
 .menu a{
 color:white;
 text-decoration:none;
-font-size:16px;
-transition:0.3s;
 }
 
 .menu a:hover{
@@ -74,45 +66,30 @@ color:#00c853;
 
 /* REDES */
 
-.redes-top{
-display:flex;
-gap:18px;
-}
-
 .redes-top a{
-font-size:38px;
-transition:0.3s;
+font-size:30px;
+margin:0 5px;
 }
 
 .redes-top a:nth-child(1){color:#E1306C;}
 .redes-top a:nth-child(2){color:#1877F2;}
 .redes-top a:nth-child(3){color:#25D366;}
 
-.redes-top a:hover{
-transform:scale(1.25);
-}
-
 /* SECCIONES */
-<div class="section" id="quienes">
 
-<h2>Quiénes Somos</h2>
-
-<div class="quienes-box">
-
-<p>
-FRICOM es una empresa dedicada al servicio técnico en refrigeración industrial, comercial y aire acondicionado. 
-Contamos con experiencia en instalación, mantención y reparación de equipos, entregando soluciones eficientes y confiables tanto para empresas como clientes particulares.
-</p>
-
-<p>
-Nuestro compromiso es brindar un servicio profesional, rápido y seguro, utilizando herramientas adecuadas y aplicando buenas prácticas para garantizar el correcto funcionamiento de cada sistema.
-</p>
-
-</div>
-
-</div>
 .section{
 padding:60px 20px;
+scroll-margin-top:100px;
+}
+
+/* QUIENES */
+
+.quienes-box{
+max-width:800px;
+margin:auto;
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:15px;
 }
 
 /* SERVICIOS */
@@ -120,77 +97,31 @@ padding:60px 20px;
 .services{
 display:flex;
 justify-content:center;
-align-items:center;
-gap:25px;
-flex-wrap:wrap;
-text-align:center;
-}
-
-.services{
-display:flex;
-justify-content:center;
 gap:25px;
 flex-wrap:wrap;
 }
-
-/* TARJETAS CON IMAGEN */
 
 .service{
 position:relative;
 width:260px;
 height:180px;
 border-radius:15px;
-overflow:hidden;
 display:flex;
 align-items:center;
 justify-content:center;
-color:white;
-font-weight:bold;
-text-align:center;
-cursor:pointer;
-transition:0.3s;
 background-size:cover;
-background-position:center;
 }
-
-/* CAPA OSCURA */
 
 .service::before{
 content:"";
 position:absolute;
-top:0;
-left:0;
 width:100%;
 height:100%;
 background:rgba(0,0,0,0.55);
 }
 
-/* TEXTO ENCIMA */
-
 .service h3{
-position:relative;
 z-index:2;
-padding:10px;
-}
-
-/* EFECTO HOVER */
-
-.service:hover{
-transform:scale(1.05);
-}
-
-/* IMÁGENES */
-
-.img1{
-background-image:url("man5.jpg");
-}
-
-.img2{
-background-image:url("trabajo1.jpg");
-}
-
-.img3{
-background-image:url("man4.jpg");
 }
 
 /* PROMO */
@@ -201,72 +132,30 @@ padding:35px;
 border-radius:15px;
 max-width:450px;
 margin:auto;
-box-shadow:0 10px 30px rgba(0,0,0,0.6);
 border:2px solid #00c853;
 }
 
 .aire{
 width:100%;
 max-width:400px;
-margin-bottom:20px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.5);
-}
-
-/* BOTON */
-
-button{
-background:#00c853;
-border:none;
-padding:15px 30px;
-font-size:18px;
-border-radius:8px;
-color:white;
-cursor:pointer;
 }
 
 /* GALERIA */
 
-.galeria{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:20px;
-}
-
 .galeria img{
 width:260px;
+margin:10px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.4);
 }
 
 /* FAQ */
 
-.faq{
-max-width:800px;
-margin:auto;
-text-align:left;
-}
-
 .faq-item{
 background:rgba(0,0,0,0.6);
 padding:20px;
+margin:10px auto;
+max-width:800px;
 border-radius:10px;
-margin-bottom:15px;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-}
-
-.faq-item h3{
-margin-top:0;
-color:#00c853;
-}
-
-/* FOOTER */
-
-footer{
-background:#082567;
-padding:20px;
-margin-top:40px;
 }
 
 /* WHATSAPP */
@@ -276,17 +165,10 @@ position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
-color:white;
-font-size:26px;
-padding:15px 18px;
+padding:15px;
 border-radius:50%;
-text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.4);
-transition:0.3s;
-}
-
-.whatsapp:hover{
-transform:scale(1.1);
+color:white;
+font-size:25px;
 }
 
 /* NIEVE */
@@ -294,8 +176,6 @@ transform:scale(1.1);
 .snowflake{
 position:fixed;
 top:-10px;
-color:white;
-font-size:1em;
 animation:fall linear infinite;
 }
 
@@ -313,161 +193,60 @@ to{transform:translateY(110vh);}
 <header>
 
 <div class="logo">
-<img src="logo-fricom.png
-">
+<img src="logo-fricom.png">
 </div>
 
 <nav class="menu">
+<a href="#quienes">Quiénes Somos</a>
 <a href="#servicios">Servicios</a>
 <a href="#promo">Promoción</a>
 <a href="#trabajos">Trabajos</a>
 <a href="#ubicacion">Ubicación</a>
 <a href="#faq">Preguntas</a>
 <a href="#contacto">Contacto</a>
-<a href="#quienes">Quiénes Somos</a>
 </nav>
 
 <div class="redes-top">
-
-<a href="https://www.instagram.com/fricom_spa/" target="_blank">
-<i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://www.facebook.com/p/Fricom-100063662135570/?locale=es_LA" target="_blank">
-<i class="fab fa-facebook-f"></i>
-</a>
-
-<a href="https://wa.me/56981952517" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
-
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
 </div>
 
 </header>
+
+<!-- QUIENES SOMOS -->
+
+<div class="section" id="quienes">
+<h2>Quiénes Somos</h2>
+<div class="quienes-box">
+<p>FRICOM SPA nace en el año 2020 con el propósito de solucionar problemáticas en refrigeración y climatización.</p>
+<p>Brindamos un servicio rápido, confiable y profesional tanto a empresas como particulares.</p>
+</div>
+</div>
+
+<!-- SERVICIOS -->
 
 <div class="section" id="servicios">
 <h2>Servicios</h2>
 
 <div class="services">
-
-<div class="service img1">
-<h3>Instalación Aire Acondicionado</h3>
+<div class="service img1"><h3>Instalación</h3></div>
+<div class="service img2"><h3>Mantención</h3></div>
+<div class="service img3"><h3>Reparación</h3></div>
+</div>
 </div>
 
-<div class="service img2">
-<h3>Mantención Equipos</h3>
-</div>
-
-<div class="service img3">
-<h3>Reparación Sistemas</h3>
-</div>
-
-</div>
+<!-- PROMO -->
 
 <div class="section" id="promo">
-<h2>Promoción Invierno</h2>
+<h2>Promoción</h2>
 
 <div class="card">
-
 <img class="aire" src="oferta.png">
-
-<h3>Aire acondicionado Inverter</h3>
-<p>9000 BTU</p>
+<h3>9000 BTU</h3>
 <h2>$420.000</h2>
-<p>Instalación incluida</p>
-
-<br>
-
-<a href="https://wa.me/56981952517">
-<button>Consultar por WhatsApp</button>
-</a>
-
 </div>
 </div>
-
-<div class="section" id="trabajos">
-<h2>Trabajos Realizados</h2>
-
-<div class="galeria">
-<img src="trabajo1.jpg">
-<img src="trabajo2.jpg">
-<img src="trabajo3.jpg">
-</div>
-
-</div>
-
-<div class="section" id="ubicacion">
-<h2>Ubicación</h2>
-
-<iframe
-src="https://www.google.com/maps?q=Puerto%20Montt&output=embed"
-width="90%"
-height="300"
-style="border:0;"
-loading="lazy">
-</iframe>
-
-</div>
-
-<!-- PREGUNTAS FRECUENTES -->
-
-<div class="section" id="faq">
-
-<h2>Preguntas Frecuentes</h2>
-
-<div class="faq">
-
-<div class="faq-item">
-<h3>¿Qué ventajas tiene un aire acondicionado frente a una estufa a leña?</h3>
-<p>El aire acondicionado no genera humo, cenizas ni contaminación dentro del hogar. Además permite controlar la temperatura de forma precisa, es más limpio y no requiere almacenar leña.</p>
-</div>
-
-<div class="faq-item">
-<h3>¿Es más económico que calefacción a gas o parafina?</h3>
-<p>Los equipos inverter modernos consumen menos energía y mantienen la temperatura de forma eficiente, lo que puede generar un ahorro importante en comparación con sistemas de gas o parafina.</p>
-</div>
-
-<div class="faq-item">
-<h3>¿Qué ventajas tiene frente a estufas a pellet?</h3>
-<p>El aire acondicionado requiere menos mantenimiento, no necesita carga de combustible y funciona de forma automática con control remoto o programación.</p>
-</div>
-
-<div class="faq-item">
-<h3>¿El aire acondicionado también sirve para enfriar?</h3>
-<p>Sí. Una de sus principales ventajas es que funciona tanto para calefacción en invierno como para refrigeración en verano.</p>
-</div>
-
-<div class="faq-item">
-<h3>¿Es seguro para usar dentro del hogar?</h3>
-<p>Sí. A diferencia de sistemas que usan combustión como leña, gas o parafina, el aire acondicionado no produce gases ni riesgo de monóxido de carbono.</p>
-</div>
-
-<div class="faq-item">
-<h3>¿Se puede instalar en casas, oficinas o locales comerciales?</h3>
-<p>Sí, los equipos de aire acondicionado pueden instalarse en hogares, oficinas, locales comerciales y diferentes tipos de espacios según la capacidad del equipo.</p>
-</div>
-
-</div>
-
-</div>
-
-<div class="section" id="contacto">
-
-<h2>Contacto</h2>
-
-<p>📞 +56 9 8195 2517</p>
-<p>📞 +56 9 4213 8052</p>
-
-<h3>Escanea para guardar contacto</h3>
-
-<img src="qr-code.png" width="150">
-
-</div>
-
-<footer>
-FRICOM © 2026  
-Refrigeración y Climatización
-</footer>
 
 </div>
 
@@ -476,20 +255,14 @@ Refrigeración y Climatización
 </a>
 
 <script>
-
 for(let i=0;i<40;i++){
-
 let snow=document.createElement("div");
 snow.className="snowflake";
 snow.innerHTML="❄";
 snow.style.left=Math.random()*100+"vw";
 snow.style.animationDuration=3+Math.random()*5+"s";
-snow.style.fontSize=10+Math.random()*20+"px";
-
 document.body.appendChild(snow);
-
 }
-
 </script>
 
 </body>
