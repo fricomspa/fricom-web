@@ -7,6 +7,38 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
+  .quienes-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
+margin-top:30px;
+}
+
+.quienes-card{
+background:rgba(0,0,0,0.6);
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
+transition:0.3s;
+backdrop-filter:blur(5px);
+}
+
+.quienes-card:hover{
+transform:translateY(-5px);
+}
+
+.quienes-card i{
+font-size:40px;
+margin-bottom:10px;
+color:#00c853;
+}
+
+.quienes-card h3{
+margin:10px 0;
+color:#00c853;
+}
 .quienes-box{
 max-width:800px;
 margin:auto;
