@@ -8,9 +8,7 @@
 
 <style>
 
-html{
-scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth;}
 
 body{
 font-family:Arial;
@@ -18,7 +16,6 @@ margin:0;
 background-image:url("NIEVE FONDO.jpg");
 background-size:cover;
 background-position:center;
-background-repeat:no-repeat;
 background-attachment:fixed;
 color:white;
 text-align:center;
@@ -26,7 +23,7 @@ overflow-x:hidden;
 }
 
 .overlay{
-background:rgba(0,0,0,0.55);
+background:rgba(0,0,0,0.6);
 min-height:100vh;
 }
 
@@ -37,21 +34,14 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:15px 40px;
-background:rgba(0,0,0,0.6);
+background:rgba(0,0,0,0.7);
 position:sticky;
 top:0;
 z-index:1000;
 }
 
-.logo{
-flex:1;
-text-align:left;
-}
-
-.logo img{
-width:280px;
-filter:drop-shadow(0 0 12px #00cfff);
-}
+.logo{flex:1;text-align:left;}
+.logo img{width:260px;filter:drop-shadow(0 0 12px #00e5ff);}
 
 .menu{
 flex:2;
@@ -65,9 +55,7 @@ color:white;
 text-decoration:none;
 }
 
-.menu a:hover{
-color:#00c853;
-}
+.menu a:hover{color:#00e5ff;}
 
 .redes-top{
 flex:1;
@@ -92,6 +80,19 @@ margin:80px auto;
 padding:60px 20px;
 }
 
+/* ANIMACION */
+
+.animar{
+opacity:0;
+transform:translateY(40px);
+transition:0.8s;
+}
+
+.animar.visible{
+opacity:1;
+transform:translateY(0);
+}
+
 /* QUIENES */
 
 .quienes-grid{
@@ -102,29 +103,25 @@ margin-top:30px;
 }
 
 .quienes-card{
-background:rgba(0,0,0,0.6);
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
 padding:25px;
 border-radius:15px;
-transition:0.3s;
+backdrop-filter:blur(10px);
+box-shadow:0 10px 30px rgba(0,0,0,0.6);
+transition:0.4s;
+}
+
+.quienes-card:hover{
+transform:translateY(-8px) scale(1.03);
+box-shadow:0 15px 40px rgba(0,200,255,0.4);
 }
 
 .quienes-card i{
 font-size:40px;
-color:#00c853;
+color:#00e5ff;
+text-shadow:0 0 10px #00e5ff;
 margin-bottom:10px;
-}
-
-.quienes-card p{
-opacity:0.8;
-transition:0.3s;
-}
-
-.quienes-card:hover{
-transform:translateY(-5px);
-}
-
-.quienes-card:hover p{
-opacity:1;
 }
 
 /* SERVICIOS */
@@ -146,6 +143,7 @@ align-items:center;
 justify-content:center;
 background-size:cover;
 background-position:center;
+transition:0.3s;
 }
 
 .service::before{
@@ -156,8 +154,11 @@ height:100%;
 background:rgba(0,0,0,0.55);
 }
 
-.service h3{
-z-index:2;
+.service h3{z-index:2;}
+
+.service:hover{
+transform:scale(1.07);
+box-shadow:0 10px 30px rgba(0,200,255,0.4);
 }
 
 .img1{background-image:url("man5.jpg");}
@@ -172,12 +173,30 @@ padding:35px;
 border-radius:15px;
 max-width:450px;
 margin:auto;
-border:2px solid #00c853;
+border:2px solid #00e5ff;
 }
 
 .aire{
 width:100%;
 max-width:400px;
+}
+
+/* BOTON */
+
+button{
+background:linear-gradient(45deg,#00c853,#00e5ff);
+border:none;
+padding:15px 30px;
+font-size:18px;
+border-radius:8px;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+box-shadow:0 5px 20px rgba(0,200,255,0.5);
 }
 
 /* GALERIA */
@@ -255,74 +274,46 @@ to{transform:translateY(110vh);}
 
 <div class="redes-top">
 <a href="https://www.instagram.com/fricom_spa/" target="_blank"><i class="fab fa-instagram"></i></a>
-<a href="https://www.facebook.com/p/Fricom-100063662135570/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
-<a href="https://wa.me/56981952517" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<a href="https://www.facebook.com/p/Fricom-100063662135570/?locale=es_LA"><i class="fab fa-facebook-f"></i></a>
+<a href="https://wa.me/56981952517"><i class="fab fa-whatsapp"></i></a>
 </div>
 
 </header>
 
 <!-- QUIENES -->
 
-<div class="section" id="quienes">
+<div class="section animar" id="quienes">
 
 <h2>Quiénes Somos</h2>
 
 <p style="max-width:800px;margin:auto;">
-FRICOM SPA es una empresa especializada en refrigeración industrial, comercial y climatización, con enfoque en soluciones rápidas, seguras y de alta calidad para nuestros clientes.
+FRICOM SPA es una empresa especializada en refrigeración industrial, comercial y climatización.
 </p>
 
 <div class="quienes-grid">
 
-<div class="quienes-card">
-<i class="fas fa-snowflake"></i>
-<h3>Especialistas</h3>
-<p>Refrigeración industrial, comercial y aire acondicionado con experiencia técnica.</p>
-</div>
+<div class="quienes-card"><i class="fas fa-snowflake"></i><h3>Especialistas</h3><p>Alta experiencia técnica.</p></div>
+<div class="quienes-card"><i class="fas fa-bolt"></i><h3>Respuesta Rápida</h3><p>Atención eficiente.</p></div>
+<div class="quienes-card"><i class="fas fa-users"></i><h3>Cercanía</h3><p>Relación directa.</p></div>
+<div class="quienes-card"><i class="fas fa-shield-alt"></i><h3>Seguridad</h3><p>Trabajo seguro.</p></div>
+<div class="quienes-card"><i class="fas fa-tools"></i><h3>Servicios</h3><p>Mantención y reparación.</p></div>
+<div class="quienes-card"><i class="fas fa-star"></i><h3>Misión</h3><p>Confianza total.</p></div>
 
-<div class="quienes-card">
-<i class="fas fa-bolt"></i>
-<h3>Respuesta Rápida</h3>
-<p>Atención ágil y soluciones eficientes para reducir tiempos de espera.</p>
-</div>
-
-<div class="quienes-card">
-<i class="fas fa-users"></i>
-<h3>Cercanía</h3>
-<p>Entendemos tus necesidades para entregar soluciones precisas.</p>
-</div>
-
-<div class="quienes-card">
-<i class="fas fa-shield-alt"></i>
-<h3>Seguridad</h3>
-<p>Trabajos seguros cumpliendo normativa y buenas prácticas.</p>
-</div>
-
-<div class="quienes-card">
-<i class="fas fa-tools"></i>
-<h3>Servicios</h3>
-<p>Instalación, mantención y reparación de equipos.</p>
-</div>
-
-<div class="quienes-card">
-<i class="fas fa-star"></i>
-<h3>Misión</h3>
-<p>Que cada cliente sienta que su problema es el nuestro.</p>
-</div>
 </div>
 
 </div>
 
 <!-- SERVICIOS -->
 
-<div class="section" id="servicios">
+<div class="section animar" id="servicios">
 
 <h2>Servicios</h2>
 
 <div class="services">
 
-<div class="service img1"><h3>Instalación Aire Acondicionado</h3></div>
-<div class="service img2"><h3>Mantención Equipos</h3></div>
-<div class="service img3"><h3>Reparación Sistemas</h3></div>
+<div class="service img1"><h3>Instalación Aire</h3></div>
+<div class="service img2"><h3>Mantención</h3></div>
+<div class="service img3"><h3>Reparación</h3></div>
 
 </div>
 
@@ -330,7 +321,7 @@ FRICOM SPA es una empresa especializada en refrigeración industrial, comercial 
 
 <!-- PROMO -->
 
-<div class="section" id="promo">
+<div class="section animar" id="promo">
 
 <h2>Promoción Invierno</h2>
 
@@ -340,12 +331,17 @@ FRICOM SPA es una empresa especializada en refrigeración industrial, comercial 
 
 <h2>$420.000</h2>
 
+<a href="https://wa.me/56981952517">
+<button>Consultar</button>
+</a>
+
 </div>
 
 </div>
+
 <!-- CONTACTO -->
 
-<div class="section" id="contacto">
+<div class="section animar" id="contacto">
 
 <h2>Contacto</h2>
 
@@ -354,9 +350,15 @@ FRICOM SPA es una empresa especializada en refrigeración industrial, comercial 
 
 <h3>Escanea para guardar contacto</h3>
 
-<img src="qr-code.png" width="160" style="margin-top:10px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.5);">
+<img src="qr-code.png" width="160">
 
 </div>
+
+<footer>
+FRICOM © 2026  
+Refrigeración y Climatización
+</footer>
+
 </div>
 
 <a href="https://wa.me/56981952517" class="whatsapp">
@@ -364,6 +366,21 @@ FRICOM SPA es una empresa especializada en refrigeración industrial, comercial 
 </a>
 
 <script>
+
+const elementos=document.querySelectorAll('.animar');
+
+const mostrar=()=>{
+elementos.forEach(el=>{
+const top=el.getBoundingClientRect().top;
+if(top<window.innerHeight-100){
+el.classList.add('visible');
+}
+});
+};
+
+window.addEventListener('scroll',mostrar);
+mostrar();
+
 for(let i=0;i<40;i++){
 let snow=document.createElement("div");
 snow.className="snowflake";
@@ -372,6 +389,7 @@ snow.style.left=Math.random()*100+"vw";
 snow.style.animationDuration=3+Math.random()*5+"s";
 document.body.appendChild(snow);
 }
+
 </script>
 
 </body>
